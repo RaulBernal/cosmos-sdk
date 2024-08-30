@@ -12,7 +12,7 @@ require (
 	cosmossdk.io/store v1.1.1-0.20240815194237-858ec2fcb897
 	cosmossdk.io/x/gov v0.0.0-20230925135524-a1bc045b3190
 	github.com/cometbft/cometbft/api v1.0.0-rc.1
-	github.com/cosmos/cosmos-db v1.0.2
+	github.com/cosmos/cosmos-db v1.0.3-0.20240829004618-717cba019b33
 	github.com/cosmos/cosmos-proto v1.0.0-beta.5
 	github.com/cosmos/cosmos-sdk v0.52.0
 	github.com/cosmos/gogoproto v1.7.0
@@ -172,14 +172,23 @@ require (
 
 replace github.com/cosmos/cosmos-sdk => ../..
 
+replace github.com/cosmos/iavl => github.com/cosmos/iavl v1.0.0-beta.1.0.20240813194616-eb5078efcf9e
+
 // TODO remove post spinning out all modules
 replace (
+<<<<<<< HEAD
 	// pseudo version lower than the latest tag
 	cosmossdk.io/api => cosmossdk.io/api v0.7.3-0.20240815194237-858ec2fcb897 // main
 	// pseudo version lower than the latest tag
 	cosmossdk.io/core => cosmossdk.io/core v0.12.1-0.20240829151633-41a9af76e071 // main
 	// pseudo version lower than the latest tag
 	cosmossdk.io/store => cosmossdk.io/store v1.0.0-rc.0.0.20240815194237-858ec2fcb897 // main
+=======
+	cosmossdk.io/api => ../../api
+	cosmossdk.io/core => ../../core
+	cosmossdk.io/core/testing => ../../core/testing
+	cosmossdk.io/store => ../../store
+>>>>>>> ce4fb98cb (feat: replace the `cosmos-db.DB` interface with `core/store` interface (#21450))
 	cosmossdk.io/x/accounts => ../accounts
 	cosmossdk.io/x/auth => ../auth
 	cosmossdk.io/x/bank => ../bank
