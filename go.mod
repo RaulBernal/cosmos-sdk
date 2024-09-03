@@ -5,9 +5,9 @@ module github.com/cosmos/cosmos-sdk
 require (
 	buf.build/gen/go/cometbft/cometbft/protocolbuffers/go v1.34.2-20240701160653-fedbb9acfd2f.2 // indirect
 	cosmossdk.io/api v0.8.0 // main
-	cosmossdk.io/collections v0.4.1-0.20240802064046-23fac2f1b8ab // main
+	cosmossdk.io/collections v0.4.1-0.20240902195647-9197f541e5bc // main
 	cosmossdk.io/core v1.0.0
-	cosmossdk.io/core/testing v0.0.0-20240826100755-28c792bcd06c // main
+	cosmossdk.io/core/testing v0.0.0-20240902195647-9197f541e5bc // main
 	cosmossdk.io/depinject v1.0.0
 	cosmossdk.io/errors v1.0.1
 	cosmossdk.io/log v1.4.1
@@ -184,21 +184,12 @@ require (
 // )
 // TODO remove after all modules have their own go.mods
 replace (
-<<<<<<< HEAD
 	// pseudo version lower than the latest tag
 	cosmossdk.io/api => cosmossdk.io/api v0.7.3-0.20240815194237-858ec2fcb897 // main
 	// pseudo version lower than the latest tag
 	cosmossdk.io/core => cosmossdk.io/core v0.12.1-0.20240829151633-41a9af76e071 // main
 	// pseudo version lower than the latest tag
 	cosmossdk.io/store => cosmossdk.io/store v1.0.0-rc.0.0.20240815194237-858ec2fcb897 // main
-	cosmossdk.io/x/accounts => ./x/accounts
-=======
-	cosmossdk.io/api => ./api
-	cosmossdk.io/collections => ./collections
-	cosmossdk.io/core => ./core
-	cosmossdk.io/core/testing => ./core/testing
-	cosmossdk.io/store => ./store
->>>>>>> 9197f541e (chore: remove accounts replaces  (#21504))
 	cosmossdk.io/x/auth => ./x/auth
 	cosmossdk.io/x/bank => ./x/bank
 	cosmossdk.io/x/consensus => ./x/consensus
