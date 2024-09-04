@@ -98,7 +98,7 @@ func TestPublicKeyUnsafeHDPath(t *testing.T) {
 
 func TestPublicKeySafe(t *testing.T) {
 	path := *hd.NewFundraiserParams(0, sdk.CoinType, 0)
-	priv, addr, err := NewPrivKeySecp256k1(path, "cosmos")
+	priv, addr, err := NewPrivKeySecp256k1(path, "bcna")
 
 	require.NoError(t, err)
 	require.NotNil(t, priv)
@@ -145,7 +145,7 @@ func TestPublicKeyHDPath(t *testing.T) {
 		path := *hd.NewFundraiserParams(0, sdk.CoinType, uint32(i))
 		t.Logf("Checking keys at %s\n", path.String())
 
-		priv, addr, err := NewPrivKeySecp256k1(path, "cosmos")
+		priv, addr, err := NewPrivKeySecp256k1(path, "bcna")
 		require.NoError(t, err)
 		require.NotNil(t, addr)
 		require.NotNil(t, priv)

@@ -50,7 +50,7 @@ func (suite *KeeperTestSuite) SetupTest() {
 	for i := 0; i < len(suite.addrs); i++ {
 		suite.accountKeeper.EXPECT().GetAccount(gomock.Any(), suite.addrs[i]).Return(authtypes.NewBaseAccountWithAddress(suite.addrs[i])).AnyTimes()
 	}
-	suite.accountKeeper.EXPECT().AddressCodec().Return(codecaddress.NewBech32Codec("cosmos")).AnyTimes()
+	suite.accountKeeper.EXPECT().AddressCodec().Return(codecaddress.NewBech32Codec("bcna")).AnyTimes()
 	suite.bankKeeper = feegranttestutil.NewMockBankKeeper(ctrl)
 	suite.bankKeeper.EXPECT().BlockedAddr(gomock.Any()).Return(false).AnyTimes()
 
@@ -172,7 +172,7 @@ func (suite *KeeperTestSuite) TestKeeperCrud() {
 		})
 	}
 	address := "cosmos1rxr4mq58w3gtnx5tsc438mwjjafv3mja7k5pnu"
-	accAddr, err := codecaddress.NewBech32Codec("cosmos").StringToBytes(address)
+	accAddr, err := codecaddress.NewBech32Codec("bcna").StringToBytes(address)
 	suite.Require().NoError(err)
 	suite.accountKeeper.EXPECT().GetAccount(gomock.Any(), accAddr).Return(authtypes.NewBaseAccountWithAddress(accAddr)).AnyTimes()
 

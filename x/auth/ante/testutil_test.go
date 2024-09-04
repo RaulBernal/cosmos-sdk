@@ -78,7 +78,7 @@ func SetupTestSuite(t *testing.T, isCheckTx bool) *AnteTestSuite {
 	}
 
 	suite.accountKeeper = keeper.NewAccountKeeper(
-		suite.encCfg.Codec, runtime.NewKVStoreService(key), types.ProtoBaseAccount, maccPerms, authcodec.NewBech32Codec("cosmos"),
+		suite.encCfg.Codec, runtime.NewKVStoreService(key), types.ProtoBaseAccount, maccPerms, authcodec.NewBech32Codec("bcna"),
 		sdk.Bech32MainPrefix, types.NewModuleAddress("gov").String(),
 	)
 	suite.accountKeeper.GetModuleAccount(suite.ctx, types.FeeCollectorName)

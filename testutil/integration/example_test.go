@@ -45,8 +45,8 @@ func Example() {
 		runtime.NewKVStoreService(keys[authtypes.StoreKey]),
 		authtypes.ProtoBaseAccount,
 		map[string][]string{minttypes.ModuleName: {authtypes.Minter}},
-		addresscodec.NewBech32Codec("cosmos"),
-		"cosmos",
+		addresscodec.NewBech32Codec("bcna"),
+		"bcna",
 		authority,
 	)
 
@@ -134,8 +134,8 @@ func Example_oneModule() {
 		runtime.NewKVStoreService(keys[authtypes.StoreKey]),
 		authtypes.ProtoBaseAccount,
 		map[string][]string{minttypes.ModuleName: {authtypes.Minter}},
-		addresscodec.NewBech32Codec("cosmos"),
-		"cosmos",
+		addresscodec.NewBech32Codec("bcna"),
+		"bcna",
 		authority,
 	)
 

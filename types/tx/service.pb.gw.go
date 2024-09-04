@@ -837,23 +837,23 @@ func RegisterServiceHandlerClient(ctx context.Context, mux *runtime.ServeMux, cl
 }
 
 var (
-	pattern_Service_Simulate_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"cosmos", "tx", "v1beta1", "simulate"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_Simulate_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"bcna", "tx", "v1beta1", "simulate"}, "", runtime.AssumeColonVerbOpt(false)))
 
-	pattern_Service_GetTx_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"cosmos", "tx", "v1beta1", "txs", "hash"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_GetTx_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"bcna", "tx", "v1beta1", "txs", "hash"}, "", runtime.AssumeColonVerbOpt(false)))
 
-	pattern_Service_BroadcastTx_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"cosmos", "tx", "v1beta1", "txs"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_BroadcastTx_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"bcna", "tx", "v1beta1", "txs"}, "", runtime.AssumeColonVerbOpt(false)))
 
-	pattern_Service_GetTxsEvent_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"cosmos", "tx", "v1beta1", "txs"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_GetTxsEvent_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"bcna", "tx", "v1beta1", "txs"}, "", runtime.AssumeColonVerbOpt(false)))
 
-	pattern_Service_GetBlockWithTxs_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 2, 4, 1, 0, 4, 1, 5, 5}, []string{"cosmos", "tx", "v1beta1", "txs", "block", "height"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_GetBlockWithTxs_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 2, 4, 1, 0, 4, 1, 5, 5}, []string{"bcna", "tx", "v1beta1", "txs", "block", "height"}, "", runtime.AssumeColonVerbOpt(false)))
 
-	pattern_Service_TxDecode_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"cosmos", "tx", "v1beta1", "decode"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_TxDecode_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"bcna", "tx", "v1beta1", "decode"}, "", runtime.AssumeColonVerbOpt(false)))
 
-	pattern_Service_TxEncode_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"cosmos", "tx", "v1beta1", "encode"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_TxEncode_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"bcna", "tx", "v1beta1", "encode"}, "", runtime.AssumeColonVerbOpt(false)))
 
-	pattern_Service_TxEncodeAmino_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 2, 4}, []string{"cosmos", "tx", "v1beta1", "encode", "amino"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_TxEncodeAmino_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 2, 4}, []string{"bcna", "tx", "v1beta1", "encode", "amino"}, "", runtime.AssumeColonVerbOpt(false)))
 
-	pattern_Service_TxDecodeAmino_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 2, 4}, []string{"cosmos", "tx", "v1beta1", "decode", "amino"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Service_TxDecodeAmino_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 2, 4}, []string{"bcna", "tx", "v1beta1", "decode", "amino"}, "", runtime.AssumeColonVerbOpt(false)))
 )
 
 var (

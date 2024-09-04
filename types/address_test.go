@@ -146,7 +146,7 @@ func (s *addressTestSuite) TestAddrCache() {
 	osmoAddrBech32 := acc.String()
 
 	// Set SDK bech32 to 'cosmos'
-	prefix = "cosmos"
+	prefix = "bcna"
 	conf.SetBech32PrefixForAccount(prefix, prefix+"pub")
 	conf.SetBech32PrefixForValidator(prefix+"valoper", prefix+"valoperpub")
 	conf.SetBech32PrefixForConsensusNode(prefix+"valcons", prefix+"valconspub")
@@ -183,7 +183,7 @@ func (s *addressTestSuite) TestAddrCacheDisabled() {
 	osmoAddrBech32 := acc.String()
 
 	// Set SDK bech32 to 'cosmos'
-	prefix = "cosmos"
+	prefix = "bcna"
 	conf.SetBech32PrefixForAccount(prefix, prefix+"pub")
 	conf.SetBech32PrefixForValidator(prefix+"valoper", prefix+"valoperpub")
 	conf.SetBech32PrefixForConsensusNode(prefix+"valcons", prefix+"valconspub")
@@ -194,7 +194,7 @@ func (s *addressTestSuite) TestAddrCacheDisabled() {
 	// retrieve the bech32 address from the cache, respecting the bech32 prefix change.
 	s.Require().NotEqual(osmoAddrBech32, cosmosAddrBech32)
 	s.Require().True(strings.HasPrefix(osmoAddrBech32, "osmo"))
-	s.Require().True(strings.HasPrefix(cosmosAddrBech32, "cosmos"))
+	s.Require().True(strings.HasPrefix(cosmosAddrBech32, "bcna"))
 }
 
 func (s *addressTestSuite) TestValAddr() {

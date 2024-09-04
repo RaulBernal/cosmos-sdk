@@ -61,7 +61,7 @@ func TestNewKeyring(t *testing.T) {
 	}{
 		{
 			name:        "file backend",
-			appName:     "cosmos",
+			appName:     "bcna",
 			backend:     BackendFile,
 			dir:         t.TempDir(),
 			userInput:   strings.NewReader(""),
@@ -70,7 +70,7 @@ func TestNewKeyring(t *testing.T) {
 		},
 		{
 			name:        "unknown backend",
-			appName:     "cosmos",
+			appName:     "bcna",
 			backend:     "unknown",
 			dir:         t.TempDir(),
 			userInput:   strings.NewReader(""),
@@ -141,7 +141,7 @@ func TestNewMnemonic(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			kr, err := New("cosmos", tt.backend, t.TempDir(), tt.reader, cdc)
+			kr, err := New("bcna", tt.backend, t.TempDir(), tt.reader, cdc)
 			require.NoError(t, err)
 			tt.reader.Reset(tt.userInput)
 			k, _, err := kr.NewMnemonic(tt.uid, tt.language, tt.path, DefaultBIP39Passphrase, tt.algo)

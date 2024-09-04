@@ -564,7 +564,7 @@ func postFixPulsarMessage(msg proto.Message) {
 		}
 		_, _, bz := testdata.KeyTestPubAddr()
 		// always set address to a valid bech32 address
-		text, _ := bech32.ConvertAndEncode("cosmos", bz)
+		text, _ := bech32.ConvertAndEncode("bcna", bz)
 		m.BaseAccount.Address = text
 
 		// see negative test

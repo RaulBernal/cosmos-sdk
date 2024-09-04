@@ -65,8 +65,8 @@ func (suite *KeeperTestSuite) SetupTest() {
 		storeService,
 		types.ProtoBaseAccount,
 		maccPerms,
-		authcodec.NewBech32Codec("cosmos"),
-		"cosmos",
+		authcodec.NewBech32Codec("bcna"),
+		"bcna",
 		types.NewModuleAddress("gov").String(),
 	)
 	suite.msgServer = keeper.NewMsgServerImpl(suite.accountKeeper)

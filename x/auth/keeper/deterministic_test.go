@@ -73,8 +73,8 @@ func (suite *DeterministicTestSuite) SetupTest() {
 		storeService,
 		types.ProtoBaseAccount,
 		maccPerms,
-		authcodec.NewBech32Codec("cosmos"),
-		"cosmos",
+		authcodec.NewBech32Codec("bcna"),
+		"bcna",
 		types.NewModuleAddress("gov").String(),
 	)
 
@@ -293,8 +293,8 @@ func (suite *DeterministicTestSuite) TestGRPCQueryModuleAccounts() {
 			suite.storeService,
 			types.ProtoBaseAccount,
 			maccPerms,
-			authcodec.NewBech32Codec("cosmos"),
-			"cosmos",
+			authcodec.NewBech32Codec("bcna"),
+			"bcna",
 			types.NewModuleAddress("gov").String(),
 		)
 		suite.setModuleAccounts(suite.ctx, ak, maccs)
@@ -340,8 +340,8 @@ func (suite *DeterministicTestSuite) TestGRPCQueryModuleAccountByName() {
 			suite.storeService,
 			types.ProtoBaseAccount,
 			maccPerms,
-			authcodec.NewBech32Codec("cosmos"),
-			"cosmos",
+			authcodec.NewBech32Codec("bcna"),
+			"bcna",
 			types.NewModuleAddress("gov").String(),
 		)
 		suite.setModuleAccounts(suite.ctx, ak, []string{mName})

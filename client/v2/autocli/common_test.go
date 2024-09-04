@@ -73,7 +73,7 @@ func initFixture(t *testing.T) *fixture {
 		Builder: flag.Builder{
 			TypeResolver:          protoregistry.GlobalTypes,
 			FileResolver:          protoregistry.GlobalFiles,
-			AddressCodec:          addresscodec.NewBech32Codec("cosmos"),
+			AddressCodec:          addresscodec.NewBech32Codec("bcna"),
 			ValidatorAddressCodec: addresscodec.NewBech32Codec("cosmosvaloper"),
 			ConsensusAddressCodec: addresscodec.NewBech32Codec("cosmosvalcons"),
 		},
@@ -111,7 +111,7 @@ type testReflectionServer struct {
 func (t testReflectionServer) GetConfigurationDescriptor(_ context.Context, client *reflectionv2alpha1.GetConfigurationDescriptorRequest) (*reflectionv2alpha1.GetConfigurationDescriptorResponse, error) {
 	return &reflectionv2alpha1.GetConfigurationDescriptorResponse{
 		Config: &reflectionv2alpha1.ConfigurationDescriptor{
-			Bech32AccountAddressPrefix: "cosmos",
+			Bech32AccountAddressPrefix: "bcna",
 		},
 	}, nil
 }

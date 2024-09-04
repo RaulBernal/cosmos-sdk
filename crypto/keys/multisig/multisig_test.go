@@ -362,7 +362,7 @@ func TestDisplay(t *testing.T) {
 		depinject.Configs(
 			configurator.NewAppConfig(),
 			depinject.Supply(log.NewNopLogger(),
-				func() address.Codec { return addresscodec.NewBech32Codec("cosmos") },
+				func() address.Codec { return addresscodec.NewBech32Codec("bcna") },
 				func() runtime.ValidatorAddressCodec { return addresscodec.NewBech32Codec("cosmosvaloper") },
 				func() runtime.ConsensusAddressCodec { return addresscodec.NewBech32Codec("cosmosvalcons") },
 			),

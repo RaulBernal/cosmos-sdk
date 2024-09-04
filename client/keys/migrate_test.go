@@ -37,7 +37,7 @@ type MigrateTestSuite struct {
 func (s *MigrateTestSuite) SetupSuite() {
 	s.dir = s.T().TempDir()
 	s.cdc = moduletestutil.MakeTestEncodingConfig().Codec
-	s.appName = "cosmos"
+	s.appName = "bcna"
 	s.priv = cryptotypes.PrivKey(secp256k1.GenPrivKey())
 	s.pub = s.priv.PubKey()
 }
