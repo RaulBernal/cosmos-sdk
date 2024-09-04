@@ -147,7 +147,7 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					Use:            "delegate [validator-addr] [amount] --from [delegator_address]",
 					Short:          "Delegate liquid tokens to a validator",
 					Long:           "Delegate an amount of liquid coins to a validator from your wallet.",
-					Example:        fmt.Sprintf("%s tx staking delegate cosmosvaloper... 1000stake --from mykey", version.AppName),
+					Example:        fmt.Sprintf("%s tx staking delegate bcnavaloper... 1000stake --from mykey", version.AppName),
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "validator_address"}, {ProtoField: "amount"}},
 				},
 				{
@@ -155,7 +155,7 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					Use:            "redelegate [src-validator-addr] [dst-validator-addr] [amount] --from [delegator]",
 					Short:          "Generate multisig signatures for transactions generated offline",
 					Long:           "Redelegate an amount of illiquid staking tokens from one validator to another.",
-					Example:        fmt.Sprintf(`%s tx staking redelegate cosmosvaloper... cosmosvaloper... 100stake --from mykey`, version.AppName),
+					Example:        fmt.Sprintf(`%s tx staking redelegate bcnavaloper... bcnavaloper... 100stake --from mykey`, version.AppName),
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "validator_src_address"}, {ProtoField: "validator_dst_address"}, {ProtoField: "amount"}},
 				},
 				{
@@ -163,14 +163,14 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					Use:            "unbond [validator-addr] [amount] --from [delegator_address]",
 					Short:          "Unbond shares from a validator",
 					Long:           "Unbond an amount of bonded shares from a validator.",
-					Example:        fmt.Sprintf(`%s tx staking unbond cosmosvaloper... 100stake --from mykey`, version.AppName),
+					Example:        fmt.Sprintf(`%s tx staking unbond bcnavaloper... 100stake --from mykey`, version.AppName),
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "validator_address"}, {ProtoField: "amount"}},
 				},
 				{
 					RpcMethod:      "CancelUnbondingDelegation",
 					Use:            "cancel-unbond [validator-addr] [amount] [creation-height]",
 					Short:          "Cancel unbonding delegation and delegate back to the validator",
-					Example:        fmt.Sprintf(`%s tx staking cancel-unbond cosmosvaloper... 100stake 2 --from mykey`, version.AppName),
+					Example:        fmt.Sprintf(`%s tx staking cancel-unbond bcnavaloper... 100stake 2 --from mykey`, version.AppName),
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "validator_address"}, {ProtoField: "amount"}, {ProtoField: "creation_height"}},
 				},
 				{

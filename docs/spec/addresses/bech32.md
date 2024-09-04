@@ -9,8 +9,8 @@ In the Cosmos network, keys and addresses may refer to a number of different rol
 | HRP              | Definition                            |
 | ---------------- | ------------------------------------- |
 | cosmos           | Cosmos Account Address                |
-| cosmosvalcons    | Cosmos Validator Consensus Address    |
-| cosmosvaloper    | Cosmos Validator Operator Address     |
+| bcnavalcons    | Cosmos Validator Consensus Address    |
+| bcnavaloper    | Cosmos Validator Operator Address     |
 
 ## Encoding
 

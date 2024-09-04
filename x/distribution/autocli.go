@@ -119,7 +119,7 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					RpcMethod: "DepositValidatorRewardsPool",
 					Use:       "fund-validator-rewards-pool [validator-addr] [amount]",
 					Short:     "Fund the validator rewards pool with the specified amount",
-					Example:   fmt.Sprintf("%s tx distribution fund-validator-rewards-pool cosmosvaloper1x20lytyf6zkcrv5edpkfkn8sz578qg5sqfyqnp 100uatom --from mykey", version.AppName),
+					Example:   fmt.Sprintf("%s tx distribution fund-validator-rewards-pool bcnavaloper1x20lytyf6zkcrv5edpkfkn8sz578qg5sqfyqnp 100uatom --from mykey", version.AppName),
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{
 						{ProtoField: "validator_address"},
 						{ProtoField: "amount", Varargs: true},

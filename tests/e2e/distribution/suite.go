@@ -139,7 +139,7 @@ func (s *E2ETestSuite) TestNewWithdrawRewardsCmd() {
 			_, _ = s.network.WaitForHeightWithTimeout(10, time.Minute)
 
 			ctx := svrcmd.CreateExecuteContext(context.Background())
-			cmd := cli.NewWithdrawRewardsCmd(address.NewBech32Codec("cosmosvaloper"), address.NewBech32Codec("bcna"))
+			cmd := cli.NewWithdrawRewardsCmd(address.NewBech32Codec("bcnavaloper"), address.NewBech32Codec("bcna"))
 			cmd.SetContext(ctx)
 			cmd.SetArgs(args)
 			s.Require().NoError(client.SetCmdClientContextHandler(clientCtx, cmd))
@@ -227,7 +227,7 @@ func (s *E2ETestSuite) TestNewWithdrawAllRewardsCmd() {
 		tc := tc
 
 		s.Run(tc.name, func() {
-			cmd := cli.NewWithdrawAllRewardsCmd(address.NewBech32Codec("cosmosvaloper"), address.NewBech32Codec("bcna"))
+			cmd := cli.NewWithdrawAllRewardsCmd(address.NewBech32Codec("bcnavaloper"), address.NewBech32Codec("bcna"))
 			clientCtx := val.ClientCtx
 
 			_, _ = s.network.WaitForHeightWithTimeout(10, time.Minute)

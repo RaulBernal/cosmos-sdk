@@ -972,7 +972,7 @@ simd query staking delegation [delegator-addr] [validator-addr] [flags]
 Example:
 
 ```bash
-simd query staking delegation cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+simd query staking delegation cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 Example Output:
@@ -984,7 +984,7 @@ balance:
 delegation:
   delegator_address: cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p
   shares: "10000000000.000000000000000000"
-  validator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+  validator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 ##### delegations
@@ -1013,14 +1013,14 @@ delegation_responses:
   delegation:
     delegator_address: cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p
     shares: "10000000000.000000000000000000"
-    validator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+    validator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 - balance:
     amount: "10000000000"
     denom: stake
   delegation:
     delegator_address: cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p
     shares: "10000000000.000000000000000000"
-    validator_address: cosmosvaloper1x20lytyf6zkcrv5edpkfkn8sz578qg5sqfyqnp
+    validator_address: bcnavaloper1x20lytyf6zkcrv5edpkfkn8sz578qg5sqfyqnp
 pagination:
   next_key: null
   total: "0"
@@ -1039,7 +1039,7 @@ simd query staking delegations-to [validator-addr] [flags]
 Example:
 
 ```bash
-simd query staking delegations-to cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+simd query staking delegations-to bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 Example Output:
@@ -1051,14 +1051,14 @@ Example Output:
   delegation:
     delegator_address: cosmos1q2qwwynhv8kh3lu5fkeex4awau9x8fwt45f5cp
     shares: "504000000.000000000000000000"
-    validator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+    validator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 - balance:
     amount: "78125000000"
     denom: uixo
   delegation:
     delegator_address: cosmos1qvppl3479hw4clahe0kwdlfvf8uvjtcd99m2ca
     shares: "78125000000.000000000000000000"
-    validator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+    validator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 pagination:
   next_key: null
   total: "0"
@@ -1123,7 +1123,7 @@ valset:
     website: ""
   jailed: false
   min_self_delegation: "1"
-  operator_address: cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc
+  operator_address: bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc
   status: BOND_STATUS_BONDED
   tokens: "10000000"
   unbonding_height: "0"
@@ -1192,7 +1192,7 @@ simd query staking redelegation [delegator-addr] [src-validator-addr] [dst-valid
 Example:
 
 ```bash
-simd query staking redelegation cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p cosmosvaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+simd query staking redelegation cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p bcnavaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 Example Output:
@@ -1216,8 +1216,8 @@ redelegation_responses:
   redelegation:
     delegator_address: cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p
     entries: null
-    validator_dst_address: cosmosvaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm
-    validator_src_address: cosmosvaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm
+    validator_dst_address: bcnavaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm
+    validator_src_address: bcnavaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm
 ```
 
 ##### redelegations
@@ -1259,8 +1259,8 @@ redelegation_responses:
   redelegation:
     delegator_address: cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p
     entries: null
-    validator_dst_address: cosmosvaloper1uccl5ugxrm7vqlzwqr04pjd320d2fz0z3hc6vm
-    validator_src_address: cosmosvaloper1zppjyal5emta5cquje8ndkpz0rs046m7zqxrpp
+    validator_dst_address: bcnavaloper1uccl5ugxrm7vqlzwqr04pjd320d2fz0z3hc6vm
+    validator_src_address: bcnavaloper1zppjyal5emta5cquje8ndkpz0rs046m7zqxrpp
 - entries:
   - balance: "562770000000"
     redelegation_entry:
@@ -1271,8 +1271,8 @@ redelegation_responses:
   redelegation:
     delegator_address: cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p
     entries: null
-    validator_dst_address: cosmosvaloper1uccl5ugxrm7vqlzwqr04pjd320d2fz0z3hc6vm
-    validator_src_address: cosmosvaloper1zppjyal5emta5cquje8ndkpz0rs046m7zqxrpp
+    validator_dst_address: bcnavaloper1uccl5ugxrm7vqlzwqr04pjd320d2fz0z3hc6vm
+    validator_src_address: bcnavaloper1zppjyal5emta5cquje8ndkpz0rs046m7zqxrpp
 ```
 
 ##### redelegations-from
@@ -1288,7 +1288,7 @@ simd query staking redelegations-from [validator-addr] [flags]
 Example:
 
 ```bash
-simd query staking redelegations-from cosmosvaloper1y4rzzrgl66eyhzt6gse2k7ej3zgwmngeleucjy
+simd query staking redelegations-from bcnavaloper1y4rzzrgl66eyhzt6gse2k7ej3zgwmngeleucjy
 ```
 
 Example Output:
@@ -1314,8 +1314,8 @@ redelegation_responses:
   redelegation:
     delegator_address: cosmos1pm6e78p4pgn0da365plzl4t56pxy8hwtqp2mph
     entries: null
-    validator_dst_address: cosmosvaloper1uccl5ugxrm7vqlzwqr04pjd320d2fz0z3hc6vm
-    validator_src_address: cosmosvaloper1y4rzzrgl66eyhzt6gse2k7ej3zgwmngeleucjy
+    validator_dst_address: bcnavaloper1uccl5ugxrm7vqlzwqr04pjd320d2fz0z3hc6vm
+    validator_src_address: bcnavaloper1y4rzzrgl66eyhzt6gse2k7ej3zgwmngeleucjy
 - entries:
   - balance: "221000000"
     redelegation_entry:
@@ -1326,8 +1326,8 @@ redelegation_responses:
   redelegation:
     delegator_address: cosmos1zqv8qxy2zgn4c58fz8jt8jmhs3d0attcussrf6
     entries: null
-    validator_dst_address: cosmosvaloper10mseqwnwtjaqfrwwp2nyrruwmjp6u5jhah4c3y
-    validator_src_address: cosmosvaloper1y4rzzrgl66eyhzt6gse2k7ej3zgwmngeleucjy
+    validator_dst_address: bcnavaloper10mseqwnwtjaqfrwwp2nyrruwmjp6u5jhah4c3y
+    validator_src_address: bcnavaloper1y4rzzrgl66eyhzt6gse2k7ej3zgwmngeleucjy
 ```
 
 ##### unbonding-delegation
@@ -1343,7 +1343,7 @@ simd query staking unbonding-delegation [delegator-addr] [validator-addr] [flags
 Example:
 
 ```bash
-simd query staking unbonding-delegation cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+simd query staking unbonding-delegation cosmos1gghjut3ccd8ay0zduzj64hwre2fxs9ld75ru9p bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 Example Output:
@@ -1355,7 +1355,7 @@ entries:
   completion_time: "2021-11-02T11:35:55.391594709Z"
   creation_height: "55078"
   initial_balance: "52000000"
-validator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+validator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 ##### unbonding-delegations
@@ -1387,7 +1387,7 @@ unbonding_responses:
     completion_time: "2021-11-02T11:35:55.391594709Z"
     creation_height: "55078"
     initial_balance: "52000000"
-  validator_address: cosmosvaloper1t8ehvswxjfn3ejzkjtntcyrqwvmvuknzmvtaaa
+  validator_address: bcnavaloper1t8ehvswxjfn3ejzkjtntcyrqwvmvuknzmvtaaa
 
 ```
 
@@ -1404,7 +1404,7 @@ simd query staking unbonding-delegations-from [validator-addr] [flags]
 Example:
 
 ```bash
-simd query staking unbonding-delegations-from cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+simd query staking unbonding-delegations-from bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 Example Output:
@@ -1420,14 +1420,14 @@ unbonding_responses:
     completion_time: "2021-11-01T21:41:13.098141574Z"
     creation_height: "46823"
     initial_balance: "150000000"
-  validator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+  validator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 - delegator_address: cosmos1peteje73eklqau66mr7h7rmewmt2vt99y24f5z
   entries:
   - balance: "24000000"
     completion_time: "2021-10-31T02:57:18.192280361Z"
     creation_height: "21516"
     initial_balance: "24000000"
-  validator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+  validator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 ##### validator
@@ -1443,7 +1443,7 @@ simd query staking validator [validator-addr] [flags]
 Example:
 
 ```bash
-simd query staking validator cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+simd query staking validator bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 ```
 
 Example Output:
@@ -1470,7 +1470,7 @@ description:
   website: ""
 jailed: false
 min_self_delegation: "1"
-operator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+operator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
 status: BOND_STATUS_BONDED
 tokens: "32948270000"
 unbonding_height: "0"
@@ -1521,7 +1521,7 @@ description:
     website: ""
   jailed: false
   min_self_delegation: "1"
-  operator_address: cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
+  operator_address: bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj
   status: BOND_STATUS_BONDED
   tokens: "32948270000"
   unbonding_height: "0"
@@ -1547,7 +1547,7 @@ description:
     website: http://noderunners.biz
   jailed: false
   min_self_delegation: "1"
-  operator_address: cosmosvaloper1q5ku90atkhktze83j9xjaks2p7uruag5zp6wt7
+  operator_address: bcnavaloper1q5ku90atkhktze83j9xjaks2p7uruag5zp6wt7
   status: BOND_STATUS_BONDED
   tokens: "559343421"
   unbonding_height: "0"
@@ -1615,7 +1615,7 @@ simd tx staking delegate [validator-addr] [amount] [flags]
 Example:
 
 ```bash
-simd tx staking delegate cosmosvaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm 1000stake --from mykey
+simd tx staking delegate bcnavaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm 1000stake --from mykey
 ```
 
 ##### edit-validator
@@ -1647,7 +1647,7 @@ simd tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount] [f
 Example:
 
 ```bash
-simd tx staking redelegate cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj cosmosvaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm 100stake --from mykey
+simd tx staking redelegate bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj bcnavaloper1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm 100stake --from mykey
 ```
 
 ##### unbond
@@ -1663,7 +1663,7 @@ simd tx staking unbond [validator-addr] [amount] [flags]
 Example:
 
 ```bash
-simd tx staking unbond cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj 100stake --from mykey
+simd tx staking unbond bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj 100stake --from mykey
 ```
 
 ##### cancel unbond
@@ -1679,7 +1679,7 @@ simd tx staking cancel-unbond [validator-addr] [amount] [creation-height]
 Example:
 
 ```bash
-simd tx staking cancel-unbond cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj 100stake 123123 --from mykey
+simd tx staking cancel-unbond bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj 100stake 123123 --from mykey
 ```
 
 
@@ -1707,7 +1707,7 @@ Example Output:
 {
   "validators": [
     {
-      "operatorAddress": "cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
+      "operatorAddress": "bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
       "consensusPubkey": {"@type":"/cosmos.crypto.ed25519.PubKey","key":"Auxs3865HpB/EfssYOzfqNhEJjzys2Fo6jD5B8tPgC8="},
       "status": "BOND_STATUS_BONDED",
       "tokens": "10000000",
@@ -1744,7 +1744,7 @@ cosmos.staking.v1beta1.Query/Validator
 Example:
 
 ```bash
-grpcurl -plaintext -d '{"validator_addr":"cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
+grpcurl -plaintext -d '{"validator_addr":"bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
 localhost:9090 cosmos.staking.v1beta1.Query/Validator
 ```
 
@@ -1753,7 +1753,7 @@ Example Output:
 ```bash
 {
   "validator": {
-    "operatorAddress": "cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
+    "operatorAddress": "bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
     "consensusPubkey": {"@type":"/cosmos.crypto.ed25519.PubKey","key":"Auxs3865HpB/EfssYOzfqNhEJjzys2Fo6jD5B8tPgC8="},
     "status": "BOND_STATUS_BONDED",
     "tokens": "10000000",
@@ -1786,7 +1786,7 @@ cosmos.staking.v1beta1.Query/ValidatorDelegations
 Example:
 
 ```bash
-grpcurl -plaintext -d '{"validator_addr":"cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
+grpcurl -plaintext -d '{"validator_addr":"bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
 localhost:9090 cosmos.staking.v1beta1.Query/ValidatorDelegations
 ```
 
@@ -1798,7 +1798,7 @@ Example Output:
     {
       "delegation": {
         "delegatorAddress": "cosmos1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgy3ua5t",
-        "validatorAddress": "cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
+        "validatorAddress": "bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
         "shares": "10000000000000000000000000"
       },
       "balance": {
@@ -1824,7 +1824,7 @@ cosmos.staking.v1beta1.Query/ValidatorUnbondingDelegations
 Example:
 
 ```bash
-grpcurl -plaintext -d '{"validator_addr":"cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
+grpcurl -plaintext -d '{"validator_addr":"bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
 localhost:9090 cosmos.staking.v1beta1.Query/ValidatorUnbondingDelegations
 ```
 
@@ -1835,7 +1835,7 @@ Example Output:
   "unbonding_responses": [
     {
       "delegator_address": "cosmos1z3pzzw84d6xn00pw9dy3yapqypfde7vg6965fy",
-      "validator_address": "cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
+      "validator_address": "bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
       "entries": [
         {
           "creation_height": "25325",
@@ -1847,7 +1847,7 @@ Example Output:
     },
     {
       "delegator_address": "cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77",
-      "validator_address": "cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
+      "validator_address": "bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
       "entries": [
         {
           "creation_height": "13100",
@@ -1877,7 +1877,7 @@ Example:
 
 ```bash
 grpcurl -plaintext \
--d '{"delegator_addr": "cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77", validator_addr":"cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
+-d '{"delegator_addr": "cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77", validator_addr":"bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
 localhost:9090 cosmos.staking.v1beta1.Query/Delegation
 ```
 
@@ -1890,7 +1890,7 @@ Example Output:
     "delegation":
       {
         "delegator_address":"cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77",
-        "validator_address":"cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
+        "validator_address":"bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
         "shares":"25083119936.000000000000000000"
       },
     "balance":
@@ -1914,7 +1914,7 @@ Example:
 
 ```bash
 grpcurl -plaintext \
--d '{"delegator_addr": "cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77", validator_addr":"cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
+-d '{"delegator_addr": "cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77", validator_addr":"bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc"}' \
 localhost:9090 cosmos.staking.v1beta1.Query/UnbondingDelegation
 ```
 
@@ -1924,7 +1924,7 @@ Example Output:
 {
   "unbond": {
     "delegator_address": "cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77",
-    "validator_address": "cosmosvaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
+    "validator_address": "bcnavaloper1rne8lgs98p0jqe82sgt0qr4rdn4hgvmgp9ggcc",
     "entries": [
       {
         "creation_height": "136984",
@@ -1964,7 +1964,7 @@ Example Output:
 ```bash
 {
   "delegation_responses": [
-    {"delegation":{"delegator_address":"cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77","validator_address":"cosmosvaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fww3vc8","shares":"25083339023.000000000000000000"},"balance":{"denom":"stake","amount":"25083339023"}}
+    {"delegation":{"delegator_address":"cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77","validator_address":"bcnavaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fww3vc8","shares":"25083339023.000000000000000000"},"balance":{"denom":"stake","amount":"25083339023"}}
   ],
   "pagination": {
     "next_key": null,
@@ -1996,7 +1996,7 @@ Example Output:
   "unbonding_responses": [
     {
       "delegator_address": "cosmos1y8nyfvmqh50p6ldpzljk3yrglppdv3t8phju77",
-      "validator_address": "cosmosvaloper1sjllsnramtg3ewxqwwrwjxfgc4n4ef9uxyejze",
+      "validator_address": "bcnavaloper1sjllsnramtg3ewxqwwrwjxfgc4n4ef9uxyejze",
       "entries": [
         {
           "creation_height": "136984",
@@ -2032,7 +2032,7 @@ Example:
 
 ```bash
 grpcurl -plaintext \
--d '{"delegator_addr": "cosmos1ld5p7hn43yuh8ht28gm9pfjgj2fctujp2tgwvf", "src_validator_addr" : "cosmosvaloper1j7euyj85fv2jugejrktj540emh9353ltgppc3g", "dst_validator_addr" : "cosmosvaloper1yy3tnegzmkdcm7czzcy3flw5z0zyr9vkkxrfse"}' \
+-d '{"delegator_addr": "cosmos1ld5p7hn43yuh8ht28gm9pfjgj2fctujp2tgwvf", "src_validator_addr" : "bcnavaloper1j7euyj85fv2jugejrktj540emh9353ltgppc3g", "dst_validator_addr" : "bcnavaloper1yy3tnegzmkdcm7czzcy3flw5z0zyr9vkkxrfse"}' \
 localhost:9090 cosmos.staking.v1beta1.Query/Redelegations
 ```
 
@@ -2044,8 +2044,8 @@ Example Output:
     {
       "redelegation": {
         "delegator_address": "cosmos1ld5p7hn43yuh8ht28gm9pfjgj2fctujp2tgwvf",
-        "validator_src_address": "cosmosvaloper1j7euyj85fv2jugejrktj540emh9353ltgppc3g",
-        "validator_dst_address": "cosmosvaloper1yy3tnegzmkdcm7czzcy3flw5z0zyr9vkkxrfse",
+        "validator_src_address": "bcnavaloper1j7euyj85fv2jugejrktj540emh9353ltgppc3g",
+        "validator_dst_address": "bcnavaloper1yy3tnegzmkdcm7czzcy3flw5z0zyr9vkkxrfse",
         "entries": null
       },
       "entries": [
@@ -2087,7 +2087,7 @@ Example Output:
 {
   "validators": [
     {
-      "operator_address": "cosmosvaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fww3vc8",
+      "operator_address": "bcnavaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fww3vc8",
       "consensus_pubkey": {
         "@type": "/cosmos.crypto.ed25519.PubKey",
         "key": "UPwHWxH1zHJWGOa/m6JB3f5YjHMvPQPkVbDqqi+U7Uw="
@@ -2135,7 +2135,7 @@ Example:
 
 ```bash
 grpcurl -plaintext \
--d '{"delegator_addr": "cosmos1eh5mwu044gd5ntkkc2xgfg8247mgc56f3n8rr7", "validator_addr": "cosmosvaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fww3vc8"}' \
+-d '{"delegator_addr": "cosmos1eh5mwu044gd5ntkkc2xgfg8247mgc56f3n8rr7", "validator_addr": "bcnavaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fww3vc8"}' \
 localhost:9090 cosmos.staking.v1beta1.Query/DelegatorValidator
 ```
 
@@ -2144,7 +2144,7 @@ Example Output:
 ```bash
 {
   "validator": {
-    "operator_address": "cosmosvaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fww3vc8",
+    "operator_address": "bcnavaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fww3vc8",
     "consensus_pubkey": {
       "@type": "/cosmos.crypto.ed25519.PubKey",
       "key": "UPwHWxH1zHJWGOa/m6JB3f5YjHMvPQPkVbDqqi+U7Uw="
@@ -2219,7 +2219,7 @@ Example Output:
     },
   "valset": [
       {
-        "operator_address": "cosmosvaloper196ax4vc0lwpxndu9dyhvca7jhxp70rmcqcnylw",
+        "operator_address": "bcnavaloper196ax4vc0lwpxndu9dyhvca7jhxp70rmcqcnylw",
         "consensus_pubkey": {
           "@type": "/cosmos.crypto.ed25519.PubKey",
           "key": "/O7BtNW0pafwfvomgR4ZnfldwPXiFfJs9mHg3gwfv5Q="
@@ -2332,7 +2332,7 @@ Example Output:
     {
       "delegation": {
         "delegator_address": "cosmos1vcs68xf2tnqes5tg0khr0vyevm40ff6zdxatp5",
-        "validator_address": "cosmosvaloper1quqxfrxkycr0uzt4yk0d57tcq3zk7srm7sm6r8",
+        "validator_address": "bcnavaloper1quqxfrxkycr0uzt4yk0d57tcq3zk7srm7sm6r8",
         "shares": "256250000.000000000000000000"
       },
       "balance": {
@@ -2343,7 +2343,7 @@ Example Output:
     {
       "delegation": {
         "delegator_address": "cosmos1vcs68xf2tnqes5tg0khr0vyevm40ff6zdxatp5",
-        "validator_address": "cosmosvaloper194v8uwee2fvs2s8fa5k7j03ktwc87h5ym39jfv",
+        "validator_address": "bcnavaloper194v8uwee2fvs2s8fa5k7j03ktwc87h5ym39jfv",
         "shares": "255150000.000000000000000000"
       },
       "balance": {
@@ -2371,7 +2371,7 @@ Example:
 
 ```bash
 curl -X GET \
-"http://localhost:1317/cosmos/staking/v1beta1/delegators/cosmos1thfntksw0d35n2tkr0k8v54fr8wxtxwxl2c56e/redelegations?srcValidatorAddr=cosmosvaloper1lzhlnpahvznwfv4jmay2tgaha5kmz5qx4cuznf&dstValidatorAddr=cosmosvaloper1vq8tw77kp8lvxq9u3c8eeln9zymn68rng8pgt4" \
+"http://localhost:1317/cosmos/staking/v1beta1/delegators/cosmos1thfntksw0d35n2tkr0k8v54fr8wxtxwxl2c56e/redelegations?srcValidatorAddr=bcnavaloper1lzhlnpahvznwfv4jmay2tgaha5kmz5qx4cuznf&dstValidatorAddr=bcnavaloper1vq8tw77kp8lvxq9u3c8eeln9zymn68rng8pgt4" \
 -H  "accept: application/json"
 ```
 
@@ -2383,8 +2383,8 @@ Example Output:
     {
       "redelegation": {
         "delegator_address": "cosmos1thfntksw0d35n2tkr0k8v54fr8wxtxwxl2c56e",
-        "validator_src_address": "cosmosvaloper1lzhlnpahvznwfv4jmay2tgaha5kmz5qx4cuznf",
-        "validator_dst_address": "cosmosvaloper1vq8tw77kp8lvxq9u3c8eeln9zymn68rng8pgt4",
+        "validator_src_address": "bcnavaloper1lzhlnpahvznwfv4jmay2tgaha5kmz5qx4cuznf",
+        "validator_dst_address": "bcnavaloper1vq8tw77kp8lvxq9u3c8eeln9zymn68rng8pgt4",
         "entries": null
       },
       "entries": [
@@ -2427,7 +2427,7 @@ Example Output:
   "unbonding_responses": [
     {
       "delegator_address": "cosmos1nxv42u3lv642q0fuzu2qmrku27zgut3n3z7lll",
-      "validator_address": "cosmosvaloper1e7mvqlz50ch6gw4yjfemsc069wfre4qwmw53kq",
+      "validator_address": "bcnavaloper1e7mvqlz50ch6gw4yjfemsc069wfre4qwmw53kq",
       "entries": [
         {
           "creation_height": "2442278",
@@ -2467,7 +2467,7 @@ Example Output:
 {
   "validators": [
     {
-      "operator_address": "cosmosvaloper1xwazl8ftks4gn00y5x3c47auquc62ssuvynw64",
+      "operator_address": "bcnavaloper1xwazl8ftks4gn00y5x3c47auquc62ssuvynw64",
       "consensus_pubkey": {
         "@type": "/cosmos.crypto.ed25519.PubKey",
         "key": "5v4n3px3PkfNnKflSgepDnsMQR1hiNXnqOC11Y72/PQ="
@@ -2515,7 +2515,7 @@ Example:
 
 ```bash
 curl -X GET \
-"http://localhost:1317/cosmos/staking/v1beta1/delegators/cosmos1xwazl8ftks4gn00y5x3c47auquc62ssune9ppv/validators/cosmosvaloper1xwazl8ftks4gn00y5x3c47auquc62ssuvynw64" \
+"http://localhost:1317/cosmos/staking/v1beta1/delegators/cosmos1xwazl8ftks4gn00y5x3c47auquc62ssune9ppv/validators/bcnavaloper1xwazl8ftks4gn00y5x3c47auquc62ssuvynw64" \
 -H  "accept: application/json"
 ```
 
@@ -2524,7 +2524,7 @@ Example Output:
 ```bash
 {
   "validator": {
-    "operator_address": "cosmosvaloper1xwazl8ftks4gn00y5x3c47auquc62ssuvynw64",
+    "operator_address": "bcnavaloper1xwazl8ftks4gn00y5x3c47auquc62ssuvynw64",
     "consensus_pubkey": {
       "@type": "/cosmos.crypto.ed25519.PubKey",
       "key": "5v4n3px3PkfNnKflSgepDnsMQR1hiNXnqOC11Y72/PQ="
@@ -2601,7 +2601,7 @@ Example Output:
     },
     "valset": [
       {
-        "operator_address": "cosmosvaloper196ax4vc0lwpxndu9dyhvca7jhxp70rmcqcnylw",
+        "operator_address": "bcnavaloper196ax4vc0lwpxndu9dyhvca7jhxp70rmcqcnylw",
         "consensus_pubkey": {
           "@type": "/cosmos.crypto.ed25519.PubKey",
           "key": "/O7BtNW0pafwfvomgR4ZnfldwPXiFfJs9mHg3gwfv5Q="
@@ -2630,7 +2630,7 @@ Example Output:
         "min_self_delegation": "1"
       },
       {
-        "operator_address": "cosmosvaloper1t8ehvswxjfn3ejzkjtntcyrqwvmvuknzmvtaaa",
+        "operator_address": "bcnavaloper1t8ehvswxjfn3ejzkjtntcyrqwvmvuknzmvtaaa",
         "consensus_pubkey": {
           "@type": "/cosmos.crypto.ed25519.PubKey",
           "key": "uExZyjNLtr2+FFIhNDAMcQ8+yTrqE7ygYTsI7khkA5Y="
@@ -2736,7 +2736,7 @@ Example Output:
 {
   "validators": [
     {
-      "operator_address": "cosmosvaloper1q3jsx9dpfhtyqqgetwpe5tmk8f0ms5qywje8tw",
+      "operator_address": "bcnavaloper1q3jsx9dpfhtyqqgetwpe5tmk8f0ms5qywje8tw",
       "consensus_pubkey": {
         "@type": "/cosmos.crypto.ed25519.PubKey",
         "key": "N7BPyek2aKuNZ0N/8YsrqSDhGZmgVaYUBuddY8pwKaE="
@@ -2765,7 +2765,7 @@ Example Output:
       "min_self_delegation": "1"
     },
     {
-      "operator_address": "cosmosvaloper1q5ku90atkhktze83j9xjaks2p7uruag5zp6wt7",
+      "operator_address": "bcnavaloper1q5ku90atkhktze83j9xjaks2p7uruag5zp6wt7",
       "consensus_pubkey": {
         "@type": "/cosmos.crypto.ed25519.PubKey",
         "key": "GDNpuKDmCg9GnhnsiU4fCWktuGUemjNfvpCZiqoRIYA="
@@ -2813,7 +2813,7 @@ Example:
 
 ```bash
 curl -X GET \
-"http://localhost:1317/cosmos/staking/v1beta1/validators/cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q" \
+"http://localhost:1317/cosmos/staking/v1beta1/validators/bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q" \
 -H  "accept: application/json"
 ```
 
@@ -2822,7 +2822,7 @@ Example Output:
 ```bash
 {
   "validator": {
-    "operator_address": "cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
+    "operator_address": "bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
     "consensus_pubkey": {
       "@type": "/cosmos.crypto.ed25519.PubKey",
       "key": "sIiexdJdYWn27+7iUHQJDnkp63gq/rzUq1Y+fxoGjXc="
@@ -2864,7 +2864,7 @@ The `ValidatorDelegations` REST endpoint queries delegate information for given 
 Example:
 
 ```bash
-curl -X GET "http://localhost:1317/cosmos/staking/v1beta1/validators/cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q/delegations" -H  "accept: application/json"
+curl -X GET "http://localhost:1317/cosmos/staking/v1beta1/validators/bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q/delegations" -H  "accept: application/json"
 ```
 
 Example Output:
@@ -2875,7 +2875,7 @@ Example Output:
     {
       "delegation": {
         "delegator_address": "cosmos190g5j8aszqhvtg7cprmev8xcxs6csra7xnk3n3",
-        "validator_address": "cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
+        "validator_address": "bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
         "shares": "31000000000.000000000000000000"
       },
       "balance": {
@@ -2886,7 +2886,7 @@ Example Output:
     {
       "delegation": {
         "delegator_address": "cosmos1ddle9tczl87gsvmeva3c48nenyng4n56qwq4ee",
-        "validator_address": "cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
+        "validator_address": "bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
         "shares": "628470000.000000000000000000"
       },
       "balance": {
@@ -2897,7 +2897,7 @@ Example Output:
     {
       "delegation": {
         "delegator_address": "cosmos10fdvkczl76m040smd33lh9xn9j0cf26kk4s2nw",
-        "validator_address": "cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
+        "validator_address": "bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
         "shares": "838120000.000000000000000000"
       },
       "balance": {
@@ -2908,7 +2908,7 @@ Example Output:
     {
       "delegation": {
         "delegator_address": "cosmos1n8f5fknsv2yt7a8u6nrx30zqy7lu9jfm0t5lq8",
-        "validator_address": "cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
+        "validator_address": "bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
         "shares": "500000000.000000000000000000"
       },
       "balance": {
@@ -2919,7 +2919,7 @@ Example Output:
     {
       "delegation": {
         "delegator_address": "cosmos16msryt3fqlxtvsy8u5ay7wv2p8mglfg9hrek2e",
-        "validator_address": "cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
+        "validator_address": "bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
         "shares": "61310000.000000000000000000"
       },
       "balance": {
@@ -2947,7 +2947,7 @@ Example:
 
 ```bash
 curl -X GET \
-"http://localhost:1317/cosmos/staking/v1beta1/validators/cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q/delegations/cosmos1n8f5fknsv2yt7a8u6nrx30zqy7lu9jfm0t5lq8" \
+"http://localhost:1317/cosmos/staking/v1beta1/validators/bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q/delegations/cosmos1n8f5fknsv2yt7a8u6nrx30zqy7lu9jfm0t5lq8" \
 -H  "accept: application/json"
 ```
 
@@ -2958,7 +2958,7 @@ Example Output:
   "delegation_response": {
     "delegation": {
       "delegator_address": "cosmos1n8f5fknsv2yt7a8u6nrx30zqy7lu9jfm0t5lq8",
-      "validator_address": "cosmosvaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
+      "validator_address": "bcnavaloper16msryt3fqlxtvsy8u5ay7wv2p8mglfg9g70e3q",
       "shares": "500000000.000000000000000000"
     },
     "balance": {
@@ -2981,7 +2981,7 @@ Example:
 
 ```bash
 curl -X GET \
-"http://localhost:1317/cosmos/staking/v1beta1/validators/cosmosvaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu/delegations/cosmos1ze2ye5u5k3qdlexvt2e0nn0508p04094ya0qpm/unbonding_delegation" \
+"http://localhost:1317/cosmos/staking/v1beta1/validators/bcnavaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu/delegations/cosmos1ze2ye5u5k3qdlexvt2e0nn0508p04094ya0qpm/unbonding_delegation" \
 -H  "accept: application/json"
 ```
 
@@ -2991,7 +2991,7 @@ Example Output:
 {
   "unbond": {
     "delegator_address": "cosmos1ze2ye5u5k3qdlexvt2e0nn0508p04094ya0qpm",
-    "validator_address": "cosmosvaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu",
+    "validator_address": "bcnavaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu",
     "entries": [
       {
         "creation_height": "153687",
@@ -3016,7 +3016,7 @@ Example:
 
 ```bash
 curl -X GET \
-"http://localhost:1317/cosmos/staking/v1beta1/validators/cosmosvaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu/unbonding_delegations" \
+"http://localhost:1317/cosmos/staking/v1beta1/validators/bcnavaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu/unbonding_delegations" \
 -H  "accept: application/json"
 ```
 
@@ -3027,7 +3027,7 @@ Example Output:
   "unbonding_responses": [
     {
       "delegator_address": "cosmos1q9snn84jfrd9ge8t46kdcggpe58dua82vnj7uy",
-      "validator_address": "cosmosvaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu",
+      "validator_address": "bcnavaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu",
       "entries": [
         {
           "creation_height": "90998",
@@ -3039,7 +3039,7 @@ Example Output:
     },
     {
       "delegator_address": "cosmos1qf36e6wmq9h4twhdvs6pyq9qcaeu7ye0s3dqq2",
-      "validator_address": "cosmosvaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu",
+      "validator_address": "bcnavaloper13v4spsah85ps4vtrw07vzea37gq5la5gktlkeu",
       "entries": [
         {
           "creation_height": "47478",

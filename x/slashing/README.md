@@ -575,7 +575,7 @@ simd query slashing signing-info '{"@type":"/cosmos.crypto.ed25519.PubKey","key"
 Example Output:
 
 ```yml
-address: cosmosvalcons1nrqsld3aw6lh6t082frdqc84uwxn0t958c
+address: bcnavalcons1nrqsld3aw6lh6t082frdqc84uwxn0t958c
 index_offset: "2068"
 jailed_until: "1970-01-01T00:00:00Z"
 missed_blocks_counter: "0"
@@ -601,7 +601,7 @@ Example Output:
 
 ```yml
 info:
-- address: cosmosvalcons1nrqsld3aw6lh6t082frdqc84uwxn0t958c
+- address: bcnavalcons1nrqsld3aw6lh6t082frdqc84uwxn0t958c
   index_offset: "2075"
   jailed_until: "1970-01-01T00:00:00Z"
   missed_blocks_counter: "0"
@@ -677,7 +677,7 @@ cosmos.slashing.v1beta1.Query/SigningInfo
 Example:
 
 ```shell
-grpcurl -plaintext -d '{"cons_address":"cosmosvalcons1nrqsld3aw6lh6t082frdqc84uwxn0t958c"}' localhost:9090 cosmos.slashing.v1beta1.Query/SigningInfo
+grpcurl -plaintext -d '{"cons_address":"bcnavalcons1nrqsld3aw6lh6t082frdqc84uwxn0t958c"}' localhost:9090 cosmos.slashing.v1beta1.Query/SigningInfo
 ```
 
 Example Output:
@@ -685,7 +685,7 @@ Example Output:
 ```json
 {
   "valSigningInfo": {
-    "address": "cosmosvalcons1nrqsld3aw6lh6t082frdqc84uwxn0t958c",
+    "address": "bcnavalcons1nrqsld3aw6lh6t082frdqc84uwxn0t958c",
     "indexOffset": "3493",
     "jailedUntil": "1970-01-01T00:00:00Z"
   }
@@ -712,7 +712,7 @@ Example Output:
 {
   "info": [
     {
-      "address": "cosmosvalcons1nrqslkwd3pz096lh6t082frdqc84uwxn0t958c",
+      "address": "bcnavalcons1nrqslkwd3pz096lh6t082frdqc84uwxn0t958c",
       "indexOffset": "2467",
       "jailedUntil": "1970-01-01T00:00:00Z"
     }
@@ -761,7 +761,7 @@ Example Output:
 Example:
 
 ```shell
-curl "localhost:1317/cosmos/slashing/v1beta1/signing_infos/cosmosvalcons1nrqslkwd3pz096lh6t082frdqc84uwxn0t958c"
+curl "localhost:1317/cosmos/slashing/v1beta1/signing_infos/bcnavalcons1nrqslkwd3pz096lh6t082frdqc84uwxn0t958c"
 ```
 
 Example Output:
@@ -769,7 +769,7 @@ Example Output:
 ```json
 {
   "val_signing_info": {
-    "address": "cosmosvalcons1nrqslkwd3pz096lh6t082frdqc84uwxn0t958c",
+    "address": "bcnavalcons1nrqslkwd3pz096lh6t082frdqc84uwxn0t958c",
     "start_height": "0",
     "index_offset": "4184",
     "jailed_until": "1970-01-01T00:00:00Z",
@@ -797,7 +797,7 @@ Example Output:
 {
   "info": [
     {
-      "address": "cosmosvalcons1nrqslkwd3pz096lh6t082frdqc84uwxn0t958c",
+      "address": "bcnavalcons1nrqslkwd3pz096lh6t082frdqc84uwxn0t958c",
       "start_height": "0",
       "index_offset": "4169",
       "jailed_until": "1970-01-01T00:00:00Z",

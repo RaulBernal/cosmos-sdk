@@ -211,7 +211,7 @@ This example shows a configuration that could be used for soft signing. The exam
 
 [[chain]]
 id = "osmosis-1"
-key_format = { type = "bech32", account_key_prefix = "cosmospub", consensus_key_prefix = "cosmosvalconspub" }
+key_format = { type = "bech32", account_key_prefix = "cosmospub", consensus_key_prefix = "bcnavalconspub" }
 state_file = "/root/tmkms/config/state/priv_validator_state.json"
 
 ## Signing Provider Configuration

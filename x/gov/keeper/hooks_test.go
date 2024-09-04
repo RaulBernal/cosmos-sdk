@@ -58,7 +58,7 @@ func TestHooks(t *testing.T) {
 	addrs := simtestutil.AddTestAddrs(bankKeeper, stakingKeeper, ctx, 1, minDeposit[0].Amount)
 
 	authKeeper.EXPECT().AddressCodec().Return(address.NewBech32Codec("bcna")).AnyTimes()
-	stakingKeeper.EXPECT().ValidatorAddressCodec().Return(address.NewBech32Codec("cosmosvaloper")).AnyTimes()
+	stakingKeeper.EXPECT().ValidatorAddressCodec().Return(address.NewBech32Codec("bcnavaloper")).AnyTimes()
 
 	govHooksReceiver := MockGovHooksReceiver{}
 

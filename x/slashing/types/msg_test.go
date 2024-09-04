@@ -18,7 +18,7 @@ func TestMsgUnjailGetSignBytes(t *testing.T) {
 	require.NoError(t, err)
 	require.Equal(
 		t,
-		`{"type":"cosmos-sdk/MsgUnjail","value":{"address":"cosmosvaloper1v93xxeqhg9nn6"}}`,
+		`{"type":"cosmos-sdk/MsgUnjail","value":{"address":"bcnavaloper1v93xxeqhg9nn6"}}`,
 		string(bytes),
 	)
 }

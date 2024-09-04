@@ -189,8 +189,8 @@ var (
 				Config: appconfig.WrapAny(&stakingmodulev1.Module{
 					// NOTE: specifying a prefix is only necessary when using bech32 addresses
 					// If not specfied, the auth Bech32Prefix appended with "valoper" and "valcons" is used by default
-					Bech32PrefixValidator: "cosmosvaloper",
-					Bech32PrefixConsensus: "cosmosvalcons",
+					Bech32PrefixValidator: "bcnavaloper",
+					Bech32PrefixConsensus: "bcnavalcons",
 				}),
 			},
 			{

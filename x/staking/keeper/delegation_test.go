@@ -253,7 +253,7 @@ func (s *KeeperTestSuite) TestUnbondingDelegation() {
 		time.Unix(0, 0).UTC(),
 		math.NewInt(5),
 		0,
-		address.NewBech32Codec("cosmosvaloper"), address.NewBech32Codec("bcna"),
+		address.NewBech32Codec("bcnavaloper"), address.NewBech32Codec("bcna"),
 	)
 
 	// set and retrieve a record
@@ -310,7 +310,7 @@ func (s *KeeperTestSuite) TestUnbondingDelegationsFromValidator() {
 		time.Unix(0, 0).UTC(),
 		math.NewInt(5),
 		0,
-		address.NewBech32Codec("cosmosvaloper"), address.NewBech32Codec("bcna"),
+		address.NewBech32Codec("bcnavaloper"), address.NewBech32Codec("bcna"),
 	)
 
 	// set and retrieve a record
@@ -676,7 +676,7 @@ func (s *KeeperTestSuite) TestGetRedelegationsFromSrcValidator() {
 
 	rd := stakingtypes.NewRedelegation(addrDels[0], addrVals[0], addrVals[1], 0,
 		time.Unix(0, 0), math.NewInt(5),
-		math.LegacyNewDec(5), 0, address.NewBech32Codec("cosmosvaloper"), address.NewBech32Codec("bcna"))
+		math.LegacyNewDec(5), 0, address.NewBech32Codec("bcnavaloper"), address.NewBech32Codec("bcna"))
 
 	// set and retrieve a record
 	err := keeper.SetRedelegation(ctx, rd)
@@ -706,7 +706,7 @@ func (s *KeeperTestSuite) TestRedelegation() {
 
 	rd := stakingtypes.NewRedelegation(addrDels[0], addrVals[0], addrVals[1], 0,
 		time.Unix(0, 0).UTC(), math.NewInt(5),
-		math.LegacyNewDec(5), 0, address.NewBech32Codec("cosmosvaloper"), address.NewBech32Codec("bcna"))
+		math.LegacyNewDec(5), 0, address.NewBech32Codec("bcnavaloper"), address.NewBech32Codec("bcna"))
 
 	// test shouldn't have and redelegations
 	has, err := keeper.HasReceivingRedelegation(ctx, addrDels[0], addrVals[1])
@@ -1068,7 +1068,7 @@ func (s *KeeperTestSuite) TestUnbondingDelegationAddEntry() {
 		time.Unix(0, 0).UTC(),
 		math.NewInt(10),
 		0,
-		address.NewBech32Codec("cosmosvaloper"), address.NewBech32Codec("bcna"),
+		address.NewBech32Codec("bcnavaloper"), address.NewBech32Codec("bcna"),
 	)
 	var initialEntries []stakingtypes.UnbondingDelegationEntry
 	initialEntries = append(initialEntries, ubd.Entries...)
@@ -1110,7 +1110,7 @@ func (s *KeeperTestSuite) TestSetUnbondingDelegationEntry() {
 		time.Unix(0, 0).UTC(),
 		math.NewInt(5),
 		0,
-		address.NewBech32Codec("cosmosvaloper"), address.NewBech32Codec("bcna"),
+		address.NewBech32Codec("bcnavaloper"), address.NewBech32Codec("bcna"),
 	)
 
 	// set and retrieve a record

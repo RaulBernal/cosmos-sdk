@@ -34,7 +34,7 @@ func (s *processTestSuite) TestLaunchProcess() {
 	require := s.Require()
 	home := copyTestData(s.T(), "validate")
 	cfg := &cosmovisor.Config{Home: home, Name: "dummyd", PollInterval: 20, UnsafeSkipBackup: true}
-	logger := log.NewTestLogger(s.T()).With(log.ModuleKey, "cosmosvisor")
+	logger := log.NewTestLogger(s.T()).With(log.ModuleKey, "bcnavisor")
 
 	// should run the genesis binary and produce expected output
 	stdout, stderr := newBuffer(), newBuffer()
@@ -78,7 +78,7 @@ func (s *processTestSuite) TestLaunchProcessWithRestartDelay() {
 	require := s.Require()
 	home := copyTestData(s.T(), "validate")
 	cfg := &cosmovisor.Config{Home: home, Name: "dummyd", RestartDelay: 5 * time.Second, PollInterval: 20, UnsafeSkipBackup: true}
-	logger := log.NewTestLogger(s.T()).With(log.ModuleKey, "cosmosvisor")
+	logger := log.NewTestLogger(s.T()).With(log.ModuleKey, "bcnavisor")
 
 	// should run the genesis binary and produce expected output
 	stdout, stderr := newBuffer(), newBuffer()

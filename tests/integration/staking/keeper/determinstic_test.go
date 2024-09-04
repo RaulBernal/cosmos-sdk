@@ -38,9 +38,9 @@ import (
 )
 
 var (
-	validator1        = "cosmosvaloper1qqqryrs09ggeuqszqygqyqd2tgqmsqzewacjj7"
+	validator1        = "bcnavaloper1qqqryrs09ggeuqszqygqyqd2tgqmsqzewacjj7"
 	validatorAddr1, _ = sdk.ValAddressFromBech32(validator1)
-	validator2        = "cosmosvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj"
+	validator2        = "bcnavaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj"
 	validatorAddr2, _ = sdk.ValAddressFromBech32(validator2)
 	delegator1        = "cosmos1nph3cfzk6trsmfxkeu943nvach5qw4vwstnvkl"
 	delegatorAddr1    = sdk.MustAccAddressFromBech32(delegator1)

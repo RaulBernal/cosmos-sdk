@@ -115,8 +115,8 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/address.go#L299-
 |                    | Address Bech32 Prefix |
 | ------------------ | --------------------- |
 | Accounts           | cosmos                |
-| Validator Operator | cosmosvaloper         |
-| Consensus Nodes    | cosmosvalcons         |
+| Validator Operator | bcnavaloper         |
+| Consensus Nodes    | bcnavalcons         |
 
 ### Public Keys
 

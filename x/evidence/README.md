@@ -286,7 +286,7 @@ Example Output:
 
 ```bash
 evidence:
-  consensus_address: cosmosvalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h
+  consensus_address: bcnavalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h
   height: 11
   power: 100
   time: "2021-10-20T16:08:38.194017624Z"
@@ -304,7 +304,7 @@ Example Output:
 
 ```bash
 evidence:
-  consensus_address: cosmosvalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h
+  consensus_address: bcnavalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h
   height: 11
   power: 100
   time: "2021-10-20T16:08:38.194017624Z"
@@ -336,7 +336,7 @@ Example Output:
 ```bash
 {
   "evidence": {
-    "consensus_address": "cosmosvalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h",
+    "consensus_address": "bcnavalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h",
     "height": "11",
     "power": "100",
     "time": "2021-10-20T16:08:38.194017624Z"
@@ -364,7 +364,7 @@ Example Output:
 {
   "evidence": [
     {
-      "consensus_address": "cosmosvalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h",
+      "consensus_address": "bcnavalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h",
       "height": "11",
       "power": "100",
       "time": "2021-10-20T16:08:38.194017624Z"
@@ -399,7 +399,7 @@ Example Output:
 ```bash
 {
   "evidence": {
-    "consensus_address": "cosmosvalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h",
+    "consensus_address": "bcnavalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h",
     "height": "11",
     "power": "100",
     "time": "2021-10-20T16:08:38.194017624Z"
@@ -427,7 +427,7 @@ Example Output:
 {
   "evidence": [
     {
-      "consensus_address": "cosmosvalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h",
+      "consensus_address": "bcnavalcons1ntk8eualewuprz0gamh8hnvcem2nrcdsgz563h",
       "height": "11",
       "power": "100",
       "time": "2021-10-20T16:08:38.194017624Z"

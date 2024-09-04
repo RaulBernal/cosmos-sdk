@@ -162,7 +162,7 @@ func (s *CLITestSuite) TestPrepareConfigForTxCreateValidator() {
 
 func (s *CLITestSuite) TestNewCreateValidatorCmd() {
 	require := s.Require()
-	cmd := cli.NewCreateValidatorCmd(addresscodec.NewBech32Codec("cosmosvaloper"))
+	cmd := cli.NewCreateValidatorCmd(addresscodec.NewBech32Codec("bcnavaloper"))
 
 	validJSON := fmt.Sprintf(`
 	{
@@ -432,7 +432,7 @@ func (s *CLITestSuite) TestNewEditValidatorCmd() {
 }
 
 func (s *CLITestSuite) TestNewDelegateCmd() {
-	cmd := cli.NewDelegateCmd(addresscodec.NewBech32Codec("cosmosvaloper"), addresscodec.NewBech32Codec("bcna"))
+	cmd := cli.NewDelegateCmd(addresscodec.NewBech32Codec("bcnavaloper"), addresscodec.NewBech32Codec("bcna"))
 
 	testCases := []struct {
 		name         string
@@ -495,7 +495,7 @@ func (s *CLITestSuite) TestNewDelegateCmd() {
 }
 
 func (s *CLITestSuite) TestNewRedelegateCmd() {
-	cmd := cli.NewRedelegateCmd(addresscodec.NewBech32Codec("cosmosvaloper"), addresscodec.NewBech32Codec("bcna"))
+	cmd := cli.NewRedelegateCmd(addresscodec.NewBech32Codec("bcnavaloper"), addresscodec.NewBech32Codec("bcna"))
 
 	testCases := []struct {
 		name         string
@@ -577,7 +577,7 @@ func (s *CLITestSuite) TestNewRedelegateCmd() {
 }
 
 func (s *CLITestSuite) TestNewUnbondCmd() {
-	cmd := cli.NewUnbondCmd(addresscodec.NewBech32Codec("cosmosvaloper"), addresscodec.NewBech32Codec("bcna"))
+	cmd := cli.NewUnbondCmd(addresscodec.NewBech32Codec("bcnavaloper"), addresscodec.NewBech32Codec("bcna"))
 
 	testCases := []struct {
 		name         string
@@ -640,7 +640,7 @@ func (s *CLITestSuite) TestNewUnbondCmd() {
 }
 
 func (s *CLITestSuite) TestNewCancelUnbondingDelegationCmd() {
-	cmd := cli.NewCancelUnbondingDelegation(addresscodec.NewBech32Codec("cosmosvaloper"), addresscodec.NewBech32Codec("bcna"))
+	cmd := cli.NewCancelUnbondingDelegation(addresscodec.NewBech32Codec("bcnavaloper"), addresscodec.NewBech32Codec("bcna"))
 
 	testCases := []struct {
 		name         string

@@ -554,7 +554,7 @@ simd query distribution commission [address] [flags]
 Example:
 
 ```shell
-simd query distribution commission cosmosvaloper1...
+simd query distribution commission bcnavaloper1...
 ```
 
 Example Output:
@@ -631,7 +631,7 @@ rewards:
 - reward:
   - amount: "1000000.000000000000000000"
     denom: stake
-  validator_address: cosmosvaloper1..
+  validator_address: bcnavaloper1..
 total:
 - amount: "1000000.000000000000000000"
   denom: stake
@@ -648,7 +648,7 @@ simd query distribution slashes [validator] [start-height] [end-height] [flags]
 Example:
 
 ```shell
-simd query distribution slashes cosmosvaloper1... 1 1000
+simd query distribution slashes bcnavaloper1... 1 1000
 ```
 
 Example Output:
@@ -673,7 +673,7 @@ simd query distribution validator-outstanding-rewards [validator] [flags]
 Example:
 
 ```shell
-simd query distribution validator-outstanding-rewards cosmosvaloper1...
+simd query distribution validator-outstanding-rewards bcnavaloper1...
 ```
 
 Example Output:
@@ -689,7 +689,7 @@ rewards:
 The `validator-distribution-info` command allows users to query validator commission and self-delegation rewards for validator.
 
 ````shell
-simd query distribution validator-distribution-info cosmosvaloper1...
+simd query distribution validator-distribution-info bcnavaloper1...
 ```
 
 Example Output:
@@ -698,7 +698,7 @@ Example Output:
 commission:
 - amount: "100000.000000000000000000"
   denom: stake
-operator_address: cosmosvaloper1...
+operator_address: bcnavaloper1...
 self_bond_rewards:
 - amount: "100000.000000000000000000"
   denom: stake
@@ -766,7 +766,7 @@ simd tx distribution withdraw-rewards [validator-addr] [flags]
 Example:
 
 ```shell
-simd tx distribution withdraw-rewards cosmosvaloper1... --from cosmos1... --commission
+simd tx distribution withdraw-rewards bcnavaloper1... --from cosmos1... --commission
 ```
 
 ### gRPC
@@ -806,7 +806,7 @@ Example:
 
 ```shell
 grpcurl -plaintext \
-    -d '{"validator_address":"cosmosvalop1..."}' \
+    -d '{"validator_address":"bcnavalop1..."}' \
     localhost:9090 \
     cosmos.distribution.v1beta1.Query/ValidatorDistributionInfo
 ```
@@ -829,7 +829,7 @@ Example Output:
       "amount": "1000000000000000"
     }
   ],
-  "validator_address": "cosmosvalop1..."
+  "validator_address": "bcnavalop1..."
 }
 ```
 
@@ -841,7 +841,7 @@ Example:
 
 ```shell
 grpcurl -plaintext \
-    -d '{"validator_address":"cosmosvalop1.."}' \
+    -d '{"validator_address":"bcnavalop1.."}' \
     localhost:9090 \
     cosmos.distribution.v1beta1.Query/ValidatorOutstandingRewards
 ```
@@ -869,7 +869,7 @@ Example:
 
 ```shell
 grpcurl -plaintext \
-    -d '{"validator_address":"cosmosvalop1.."}' \
+    -d '{"validator_address":"bcnavalop1.."}' \
     localhost:9090 \
     cosmos.distribution.v1beta1.Query/ValidatorCommission
 ```
@@ -897,7 +897,7 @@ Example:
 
 ```shell
 grpcurl -plaintext \
-    -d '{"validator_address":"cosmosvalop1.."}' \
+    -d '{"validator_address":"bcnavalop1.."}' \
     localhost:9090 \
     cosmos.distribution.v1beta1.Query/ValidatorSlashes
 ```
@@ -926,7 +926,7 @@ Example:
 
 ```shell
 grpcurl -plaintext \
-    -d '{"delegator_address":"cosmos1...","validator_address":"cosmosvalop1..."}' \
+    -d '{"delegator_address":"cosmos1...","validator_address":"bcnavalop1..."}' \
     localhost:9090 \
     cosmos.distribution.v1beta1.Query/DelegationRewards
 ```
@@ -963,7 +963,7 @@ Example Output:
 {
   "rewards": [
     {
-      "validatorAddress": "cosmosvaloper1...",
+      "validatorAddress": "bcnavaloper1...",
       "reward": [
         {
           "denom": "stake",
@@ -998,7 +998,7 @@ Example Output:
 
 ```json
 {
-  "validators": ["cosmosvaloper1..."]
+  "validators": ["bcnavaloper1..."]
 }
 ```
 

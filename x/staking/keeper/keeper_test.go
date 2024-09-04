@@ -64,8 +64,8 @@ func (s *KeeperTestSuite) SetupTest() {
 		accountKeeper,
 		bankKeeper,
 		authtypes.NewModuleAddress(govtypes.ModuleName).String(),
-		address.NewBech32Codec("cosmosvaloper"),
-		address.NewBech32Codec("cosmosvalcons"),
+		address.NewBech32Codec("bcnavaloper"),
+		address.NewBech32Codec("bcnavalcons"),
 	)
 	require.NoError(keeper.SetParams(ctx, stakingtypes.DefaultParams()))
 

@@ -25,7 +25,7 @@ func (o CodecOptions) NewInterfaceRegistry() codectypes.InterfaceRegistry {
 
 	valAddressPrefix := o.ValAddressPrefix
 	if valAddressPrefix == "" {
-		valAddressPrefix = "cosmosvaloper"
+		valAddressPrefix = "bcnavaloper"
 	}
 
 	ir, err := codectypes.NewInterfaceRegistryWithOptions(codectypes.InterfaceRegistryOptions{

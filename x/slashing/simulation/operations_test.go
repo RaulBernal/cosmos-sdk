@@ -192,7 +192,7 @@ func (suite *SimTestSuite) TestSimulateMsgUnjail() {
 	err = proto.Unmarshal(operationMsg.Msg, &msg)
 	suite.Require().NoError(err)
 	suite.Require().True(operationMsg.OK)
-	suite.Require().Equal("cosmosvaloper1p8wcgrjr4pjju90xg6u9cgq55dxwq8j7epjs3u", msg.ValidatorAddr)
+	suite.Require().Equal("bcnavaloper1p8wcgrjr4pjju90xg6u9cgq55dxwq8j7epjs3u", msg.ValidatorAddr)
 	suite.Require().Len(futureOperations, 0)
 }
 

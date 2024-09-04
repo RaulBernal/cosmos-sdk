@@ -128,7 +128,7 @@ func (s *CLITestSuite) TestGenTxCmd() {
 				clientCtx.TxConfig,
 				banktypes.GenesisBalancesIterator{},
 				clientCtx.HomeDir,
-				address.NewBech32Codec("cosmosvaloper"),
+				address.NewBech32Codec("bcnavaloper"),
 			)
 			cmd.SetContext(ctx)
 			cmd.SetArgs(tc.args)

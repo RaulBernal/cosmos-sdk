@@ -90,8 +90,8 @@ func makeMinimalConfig() depinject.Config {
 	var (
 		mempoolOpt            = baseapp.SetMempool(mempool.NewSenderNonceMempool())
 		addressCodec          = func() address.Codec { return addresscodec.NewBech32Codec("bcna") }
-		validatorAddressCodec = func() runtime.ValidatorAddressCodec { return addresscodec.NewBech32Codec("cosmosvaloper") }
-		consensusAddressCodec = func() runtime.ConsensusAddressCodec { return addresscodec.NewBech32Codec("cosmosvalcons") }
+		validatorAddressCodec = func() runtime.ValidatorAddressCodec { return addresscodec.NewBech32Codec("bcnavaloper") }
+		consensusAddressCodec = func() runtime.ConsensusAddressCodec { return addresscodec.NewBech32Codec("bcnavalcons") }
 	)
 
 	return depinject.Configs(
