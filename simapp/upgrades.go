@@ -35,6 +35,7 @@ func (app SimApp) RegisterUpgradeHandlers() {
 		storeUpgrades := storetypes.StoreUpgrades{
 			Added: []string{
 				circuittypes.ModuleName,
+				"nft",
 			},
 		}
 
