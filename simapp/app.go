@@ -17,6 +17,8 @@ import (
 	nftkeeper "cosmossdk.io/x/nft/keeper"
 	upgradekeeper "cosmossdk.io/x/upgrade/keeper"
 
+	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
+	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
@@ -85,6 +87,10 @@ type SimApp struct {
 
 	// simulation manager
 	sm *module.SimulationManager
+
+	// CosmWasm
+	WasmKeeper       wasmkeeper.Keeper
+	ScopedWasmKeeper capabilitykeeper.ScopedKeeper
 }
 
 func init() {
@@ -263,7 +269,7 @@ func NewSimApp(
 		panic(err)
 	}
 
-	return app
+	return app, app.WasmKeeper.InitializePinnedCodes(app.NewUncachedContext(true, tmproto.Header{}))
 }
 
 // LegacyAmino returns SimApp's amino codec.
